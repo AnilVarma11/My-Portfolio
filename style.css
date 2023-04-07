@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #06191d;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+a{
+  text-decoration:none;
+}
+.nav-bar{
+  background-color: rgb(36, 36, 36);
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.nav-hold{
+  display:block;
+  width: 100%;
+}
+.nav-logo{
+  float: left;
+  display: block;
+  padding: 20px 0px 20px 20px;
+  font-weight: 600;
+  font-size: 23px;
+}
+.nav-logo a{
+  color: #81b441;
+}
+.nav-items{
+  float: right;
+  margin-right: 20px;
+}
+.nav-items li{
+  display:block;
+  float: left;
+  padding: 20px 10px;
+  margin-left:10px;
+}
+.nav-items li a {
+  color: #f9f9f9;
+}
+
+.nav-items li a:hover{
+  color: #81b441;
+  font-weight: 600;
+}
+
+.nav-hold{
+  overflow:hidden;
+}
+.nav-menu{
+  display: none;
+}
+
+.bracket{
+  color: darkgreen;
+}
+
+
+
+
+/* intro section */
+
+.intro{
+   display: flex;
+}
+
+.intro-img{
+  flex-basis: 40%;
+}
+
+.intro-title{
+  flex-basis: 60%;
+}
+.intro-title div{
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.intro-title .para{
+  font-size: 2.5rem;
+  margin-top: -13px;
+}
+
+.intro-title .about-para{
+  font-size: 1.2rem;
+}
+
+.intro-title h1{
+  font-size: 4.4rem;
+}
+
+.intro-title button{
+  padding: 10px 30px;
+  margin-top: 20px;
+  color: #81b441;
+  border: 0.3px solid #81b441;
+  background-color: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.intro-img img{
+  height: 320px;
+  width: 320px;
+  margin-top: 60px;
+  margin-left: 100px; 
+}
+
+
+/* animation */
+
+
+
+
+.home-scroll {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: var(--mb-2);
+  animation: float 1s linear infinite;
+  -webkit-animation: float 1.5s linear infinite;
+  -moz-animation: float 1.5s linear infinite;
+  -o-animation: float .1s linear infinite;
+}
+
+.home-scroll-link img{
+  height: 50px;
+  width: 60px;
+ 
+}
+
+@keyframes float {
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+
+
+
+
+/* about section */
+
+.about{
+  margin: 40px;
+  display: flex;
+}
+
+.about img{
+  height: 300px;
+  width: 350px;
+  margin-top: 10px;
+}
+
+.about-section{
+  margin-top: 80px;
+  line-height: 1.8em;
+} 
+.about-section h2{
+  color: #81b441;
+}
+.about-section p{
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* skills section */
+
+.skill-section{
+  margin: 40px;
+  margin-left: 80px;
+  margin-bottom: 60px;
+}
+
+.skill-section h2{
+  color: #81b441;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.skill2, .skill3{
+  margin-top: 20px;
+}
+
+.lang{
+  display: flex;
+}
+
+.lib{
+  display: flex;
+}
+
+.devlop{
+  display: flex;
+}
+
+.skills img{
+  height: 100px;
+  width: 100px;
+  margin: 15px 40px;
+}
+
+.lib img, .devlop img{
+  margin: 10px 40px;
+}
+
+/* education section*/
+
+.education{
+  margin-left: 80px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.education h2{
+  color: #81b441;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.edu-details{
+  flex: 50%;
+  margin-top: 16px;
+  margin-left: 60px;
+  line-height: 1.3em;
+}
+
+.edu-details h3{
+  color: #81b441;
+  padding-bottom: 5px;
+}
+.edu-details p{
+  padding-bottom: 3px;
+}
+
+/* projects */
+
+.pro{
+  margin: 60px 50px;
+}
+
+.pro h2{
+  text-align: center;
+  color: #81b441;
+  text-transform: uppercase;
+}
+
+.projects{
+  display: flex;
+  margin-top: 30px;
+}
+
+.projects h2{
+  text-align: center;
+ color: orange;
+  padding-bottom: 5px;
+}
+
+.project-1, .project-2{
+  flex-basis: 50%;
+  width: 70%;
+  background-color: #36454F;
+  height: 65vh;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+
+
+
+.pro1 b{
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 20%;
+}
+
+.pro1 button{
+  margin-left: 40%;
+  padding: 10px 15px;
+  background-color: greenyellow;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.pro1 img{
+     height: 40vh;
+     width: 100%;
+}
+
+
+/* footer section */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4em;
+  background-color: rgb(28, 28, 39);
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+}
+.footer-icons li {
+  list-style: none;
+  margin: 0.2em;
+  padding-bottom: 1em;
+}
+.footer-icons li a i {
+  font-size: 24px;
+  margin-right: 20px;
+  border: none;
+  color: #fff;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 768px){
+  .nav-menu{
+    display: block;
+    float: right;
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .nav-menu img{
+    height: 25px;
+  }
+  .nav-items{
+    width: 100%;
+    float: left;
+    height: 0px;
+    padding:0px;
+    margin:0px;
+    
+  }
+  .nav-items li{
+    width: 100%;
+    display: block;
+    text-align: center;
+  }  
+
+  .nav-open{
+    height: auto;
+  }
+  
+  .intro{
+    flex-direction: column-reverse;
+  }
+
+  .intro-img img{
+      margin-left: 12%;
+      margin-top: 5%;
+  }
+
+  .intro-title div{
+    margin-left: 10%;
+    margin-top: 25px;
+  }
+
+  .intro-title h1{
+     font-size: 3rem;
+  }
+  .intro-title .para{
+    font-size: 1.2rem;
+    padding-top: 10px;
+  }
+  .intro-title .about-para{
+    font-size: 1.2rem;
+  }
+
+  .home-scroll{
+    display: none;
+  }
+
+  .about-section{
+    margin: 10px;
+    margin-top: 40px;
+  }
+
+  .about-section p{
+    font-size: 17px;
+  }
+
+  .about img{
+    display: none;
+  }
+  
+  .lib img, .devlop img{
+    margin: 13px;
+    margin-right: 40px;
+    height: 70px;
+    width: 70px;
+
+  }
+
+  .lang img{
+    height: 70px;
+    width: 70px;
+  }
+
+  .skill-section{
+    margin-left: 50px;
+  }
+  .lang{
+    margin-left: -25px;
+  }
+
+  .education{
+    flex-direction: column;
+  }
+  
+  .education h2{
+    margin-left: -15px;
+  }
+
+  .edu-details{
+    margin-left: -20px;
+  }
+
+  .projects{
+    flex-direction: column;
+  }
+
+  .project-1, .project-2{
+     width: 100%;
+     margin-left: 5px;
+  }
+
+  .pro1 img{
+    height: 20vh;
+}
+
+.pro1 b{
+  margin-left: 5px;
+  font-size: 15px;
+  margin-top: 5px;
+}
+.pro1 button{
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+
+}
+
